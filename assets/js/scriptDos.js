@@ -1,0 +1,25 @@
+/* Primera forma de crear objetos */
+var medicoUno = new Object(); //var medico = {};
+console.log(medicoUno);
+medicoUno.nombre = 'Juan';
+medicoUno.apellido = 'Ramírez';
+medicoUno.rut = '11111111-1';
+console.log(medicoUno);
+var medicoDos = new Object();
+console.log(medicoDos);
+medicoDos.nombre = 'Pedro';
+medicoDos.apellido = 'Gonzalez';
+medicoDos.rut = '22222222-2';
+console.log(medicoDos);
+var medicoTres = new Object();
+console.log(medicoTres);
+medicoTres.nombre = 'Adrián';
+medicoTres.apellido = 'Perez';
+medicoTres.rut = '33333333-3';
+console.log(medicoTres);
+var medicoCuatro = Object.assign({}, medicoTres);
+console.log(medicoCuatro);
+medicoCuatro.nombre = 'José';
+medicoCuatro.apellido = 'Mardones';
+medicoCuatro.rut = '44444444-4';
+console.log(medicoCuatro);
